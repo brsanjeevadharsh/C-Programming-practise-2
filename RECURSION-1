@@ -1,0 +1,17 @@
+#include <stdio.h>
+void amma();
+void appa()
+{
+    printf("work\n");
+    amma();
+}
+void amma()
+{
+    printf("Home\n");
+    appa();
+}
+int main()
+{
+  appa();
+  amma();
+}
