@@ -1,20 +1,13 @@
 #include <stdio.h>
-void name()
+void add(int a,int b)
 {
-    char str[20];
-    double num1,num2;
-    printf("Enter your name:");
-    scanf("%[^\n]s",str);
-    printf("Enter the two numbers:\n");
-    scanf("%lf",&num1);
-    scanf("%lf",&num2);
-    printf("The name of the student %s:\n",str);
-    printf("addition:%lf\n",num1+num2);
-    printf("subtraction:%lf\n",num1-num2);
-    printf("Multiplication:%lf\n",num1*num2);
-    printf("Division:%lf\n",num1/num2);
+    int add=a+b;
+    printf("%d",add);
 }
 int main()
 {
-    name();
+    int a,b;
+    scanf("%d",&a);
+    scanf("%d",&b);
+    add(a,b);
 }
