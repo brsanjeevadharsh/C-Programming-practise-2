@@ -1,0 +1,19 @@
+#include <stdio.h>
+void pradeep()
+{
+printf("Good person makes us \"fun\" and a good person to solve math problems in short time\n");
+}
+void shiva()
+{
+    printf("Good guy and know for his technical expertise\n");
+}
+void ram()
+{
+    printf("know for the speech and the good communication skill\n");
+}
+int main()
+{
+pradeep();
+shiva();
+ram();
+}
