@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main() {
+// int declaration
+    int a;
+    printf("Enter an integer number: ");
+    scanf("%d",&a);
+    int* ptr=&a;
+    printf("The address of a variable a is %p\n",ptr);
+    printf("The value of a variabe a is %d\n",*ptr);
+    // float declaration;
+    float b;
+    printf("Enter the floating number");
+    scanf("%d",&b);
+    float *ptr1=&b;
+    printf("The address of a variable b is %p\n",ptr1);
+    printf("The value of a variable b is %d\n",*ptr1);
+}
+    
