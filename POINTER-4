@@ -1,0 +1,11 @@
+#include <stdio.h>
+void check(int * ptr)
+{
+    printf("Address present in the function %p\n",ptr);
+}
+int main()
+{
+    int a[5]={1,2,3,4,5};
+    printf("Address present in the program %p\n",a);
+    check(a);
+}
