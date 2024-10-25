@@ -1,0 +1,20 @@
+#include <stdio.h>
+int main()
+{
+    int a=5;
+    int *ptr=&a;
+    int **ptr1=&ptr;
+    int ***ptr2=&ptr1;
+    printf("Printing the values\n");
+    printf("a:%d\n",a);
+    printf("ptr1:%d\n",ptr);
+    printf("ptr2:%d\n",ptr1);
+    printf("Printing the address of each variable\n");
+    printf("a:%p\n",&a);
+    printf("ptr1:%p\n",&ptr);
+    printf("ptr2:%p\n",&ptr1);
+    printf("Printing the values using pointers only\n");
+    printf("ptr1:%d\n",*ptr);
+     printf("ptr1:%d\n",**ptr1);
+      printf("ptr2:%d\n",***ptr2);
+}
