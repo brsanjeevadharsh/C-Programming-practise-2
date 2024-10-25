@@ -1,0 +1,16 @@
+#include <stdio.h>
+int* sum()
+{
+    int a[]={1,2,3,4,5};
+    int *ptr=a;
+    return ptr;
+}
+int main()
+{
+    int* result = sum();
+    for(int i=0;i<5;i++)
+    {
+        printf("%d",result[i]);
+    }
+    return 0;
+}
