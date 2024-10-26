@@ -1,0 +1,24 @@
+#include <stdio.h>
+struct student
+{
+    int id;
+    char *name[20];
+    long int phone;
+    char *dept[30];
+};
+int main()
+{
+    struct student e1;
+    printf("Enter student ID:");
+    scanf("%d",&e1.id);
+    printf("Enter the student phone number:");
+    scanf("%ld",&e1.phone);
+    printf("Enter student name:");
+    scanf(" %[^\n]s",e1.name);
+    printf("Enter student department:");
+    scanf(" %[^\n]s",e1.dept);
+    printf("The student ID is %d\n",e1.id);
+    printf("Student Phone Number %ld\n",e1.phone);
+    printf("Student Name %s\n",e1.name);
+    printf("Student Department %s\n",e1.dept);
+}
