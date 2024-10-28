@@ -1,0 +1,34 @@
+#include <stdio.h>
+struct car
+{
+    char *car_name[20];
+    float price;
+    char *company[100];
+    int engineno;
+};
+int main()
+{
+int n;
+printf("Enter the number of cars: ");
+scanf("%d",&n);
+struct car s1[n];
+for(int i=0;i<n;i++)
+{
+    printf("Enter the car name:\n");
+    scanf(" %[^\n]s",s1[i].car_name);
+    printf("Enter the price of car:\n");
+    scanf("%f",&s1[i].price);
+    printf("Enter the name of the company\n");
+    scanf(" %[^\n]s",s1[i].company);
+    printf("Enter the engine number\n");
+    scanf("%d",&s1[i].engineno);
+}
+for(int i=0;i<n;i++)
+{
+    printf("Name of the car:%s\n",s1[i].car_name);
+    printf("Price of the car:%f\n",s1[i].price);
+    printf("Name of the company:%s\n",s1[i].company);
+    printf("Engine number:%d\n",s1[i].engineno);
+}
+return 0;
+}
