@@ -1,0 +1,40 @@
+#include <stdio.h>
+#include<stdlib.h>
+int main()
+{
+    int n,*ptr=NULL;
+    printf("Enter size : ");
+    scanf("%d",&n);
+  // ptr=(int*)malloc(n*sizeof(int));//malloc
+   ptr=(int*)calloc(n,sizeof(int)); //calloc
+    if(ptr==NULL)
+    {
+        printf("Memory Not Create");
+    }
+    else
+    {
+        for(int i=0;i<n;i++)
+        {
+            scanf("%d",&ptr[i]);
+        }
+        for(int i=0;i<n;i++)
+        {
+            printf("%d ",ptr[i]);
+        }
+    }
+    printf("\nReallocate Size");
+    int n1;
+    scanf("%d",&n1);
+    ptr=realloc(ptr,n1);
+     for(int i=0;i<n1;i++)
+        {
+            scanf("%d",ptr+i);
+        }
+        for(int i=0;i<n1;i++)
+        {
+            printf("%d ",*(ptr+i));
+        }
+        free(ptr);
+       
+    return 0;
+}
