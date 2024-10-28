@@ -1,0 +1,12 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+int main() {
+    // Write C code here
+    float a=5;
+    void *ptr=&a;
+    printf("%p\n",ptr);
+    //Typecasting is done here.
+    int b=(int)a;
+    printf("%p",a);
+    return 0;
+}
